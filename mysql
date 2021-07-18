@@ -1,0 +1,23 @@
+mysql -h mysql.cdnmkxhqxdpl.ap-south-1.rds.amazonaws.com
+   mysql -h mysql.cdnmkxhqxdpl.ap-south-1.rds.amazonaws.com -u admin -p
+ rpm -Uvh https://dev.mysql.com/get/mysql57-community-release-el7-11.noarch.rpm
+      yum install mysql-community-server
+     systemctl enable mysqld
+     systemctl start mysqld
+    systemctl status mysqld
+     mysql -h mysql.cdnmkxhqxdpl.ap-south-1.rds.amazonaws.com -u admin -p
+     mysql
+    systemctl status mysqld
+    mysql -h mysql.cdnmkxhqxdpl.ap-south-1.rds.amazonaws.com -u admin -p
+     ssh -i mumbai.pem ec2-user@10.0.19.218
+   show databases;
+   USE OWN DATBASE;
+   
+   CREATE DATABASE DEV_PETCLINIC;
+    CREATE USER 'dev_petclinicuser'@'DEV_PETCLINIC' IDENTIFIED BY '9573972811Mahi';
+     GRANT SELECT ON * . * TO 'dev_petclinicuser'@'DEV_PETCLINIC';
+      FLUSH PRIVILEGES;
+      GRANT ALL PRIVILEGES ON `DEV_PETCLINIC` . * TO 'dev_petclinicuser'@'DEV_PETCLINIC';
+       FLUSH PRIVILEGES;
+CREATE TABLES;
+SELCT *FROM table name;

@@ -1,0 +1,17 @@
+docker container prune---	Remove all stopped containers
+docker images 
+docker ps 
+docker rm conID 
+docker rmi imageID
+docker ps -a -q 
+docker rm $(docker ps -a -q)
+docker rmi $(docker images)
+docker container start	Start one or more stopped containers
+docker container top	Display the running processes of a container
+docker network ls
+        bridge
+        none
+        host
+docker build -t imgeID .
+docker run -d -p 80:80 name 
+docker exec -it containerID /bin/bash
