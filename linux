@@ -21,8 +21,49 @@ ls -ltr
 ls 
 ll
 ls -ltrh 
-ps -ef | grep -i name 
+ps -ef | grep -wi name 
+ps= process
+e=extent
+f=full status
+w=word match
+i=ignore case sensitive
+netstat -anlp grep "port"   ----service runnig or not
+systemctl start httpd
+systemctl stop 
+systemctl status name
+systemctl enable name
+w 
+who am i 
+whoami 
+#chnge hostt name 
+echo "name" >/etc/hoctname
+hostname -F /etc/hostname
+ssh -i file.pem user@ip
+scp file.pem target.pem user@ip:/tmp
+scp ---- copy server to server or local to serveer
+rwx
+read-4
+write-2
+excute-1
+rwxr---w-
+1st three owner
+2nd  three group
+3rd three others
+pemfile permission 400
+chmod 400 ---permissionfor the file
+chown 700----wonership  owner
+rm -f --- delete files
+rm -R delete directires
+rpm -ivh rpm.filename
+unzip
+wget
+java -version
+curl -I http://localhost:8080
+ls -ltrh.*sh
+nslookup --- DNS err
+telnet connection time out 
 sudo su -
+
 mkdir
 touch
 cd 
@@ -50,3 +91,6 @@ top ---  CPU process
 echo 
 hostname 
 free ---CPU usage 
+nslookup--how many ips find
+traceroute
+tracepath

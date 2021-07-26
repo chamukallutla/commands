@@ -1,0 +1,11 @@
+200 --- success code
+404 --- healthe checks faild fine not found
+502 --- service download --bad gate way
+503 --- service went down 
+504 --- health checks fails target port is wrong -- sg all so
+stikkysession---  alb send the request one server
+301---- permanetly redirecting
+302--- temparlaly redirecting
+200-399 ---- range of health checks pass
+503 --- curl  -I dns end point
+504 --- curl 
