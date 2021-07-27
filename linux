@@ -63,7 +63,7 @@ ls -ltrh.*sh
 nslookup --- DNS err
 telnet connection time out 
 sudo su -
-
+ssh -T git@github.com --- check the key connectivity
 mkdir
 touch
 cd 

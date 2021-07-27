@@ -1,5 +1,5 @@
 200 --- success code
-404 --- healthe checks faild fine not found
+404 --- url mistackes
 502 --- service download --bad gate way
 503 --- service went down 
 504 --- health checks fails target port is wrong -- sg all so
