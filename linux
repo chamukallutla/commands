@@ -94,3 +94,7 @@ free ---CPU usage
 nslookup--how many ips find
 traceroute
 tracepath
+wich ----where commands running it will showing like 
+wich ls
+wich date
+logs -f
