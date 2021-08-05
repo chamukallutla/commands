@@ -4,3 +4,7 @@ tomcat---- 9.0.50
 maven 3.8
 terraform 0.13
 mysql 5.7.33
+docker 20.10
+docker descktop 3.4
+openjdk 11
+k8s 1.20

@@ -1,0 +1,6 @@
+kubectl get ns
+kubectl get ps 
+kubectl get images 
+kubectl logs -f podname -n namespacename
+kubectl describe podname -n namespacenam
+kubectl event -n namespace

@@ -15,3 +15,19 @@ docker network ls
 docker build -t imgeID .
 docker run -d -p 80:80 name 
 docker exec -it containerID /bin/bash
+curl -I http://localhost 
+index.html /usr/local/apache2/htdocs/
+docker ps | awk '{print $1}'  ---print colums in containers
+docker system prune ---delete all unused resources like imge,conta,network,volume
+docker ps -a -f status:existed --- it will showing existed commands
+docker run -d -p 8080:80 -v /root/webapps:usr/local/apache2/htdocs httpd-----volume paming
+docker volume create  persitence
+var/lib/docker
+var/lib/docker/volume
+docker inspect contanerID
+docker-compose up
+docker-compose ps
+docker-compose down
+docker-compose images
+docker-compose build 
+docker-compose up -p 

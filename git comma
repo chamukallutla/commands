@@ -1,0 +1,18 @@
+git checkout -b branchname --- crete own branchname
+git branch --- how many branches
+git checkout -a ---- swich one branch to onether branch
+git rebase 
+git push origin branchname 
+git clone url
+git status 
+git diff ---it will be showing what file will be channge and what they are change 
+git add .
+git commit -m "pass msg"
+git commit -m '
+  pass commi 1st line 
+  pass commit 2nd line 
+'
+git push origion masster
+
+ssh  -T git@github.com --- this checking keys and debug
+

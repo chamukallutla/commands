@@ -3,5 +3,9 @@ cd /etc
 passwd----change bash
 ## root user can asking jenkin user password
 visudo
-cd /etc ----90 file 
+#change in 
+ cd /etc/sudoers.d/
+ ll
+vi 90-cloud-init-users
+
 jenkins safe restart
