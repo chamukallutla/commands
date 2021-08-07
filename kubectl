@@ -4,3 +4,8 @@ kubectl get images
 kubectl logs -f podname -n namespacename
 kubectl describe podname -n namespacenam
 kubectl event -n namespace
+k8s by deafault network
+                    callico
+                    wavenet
+                    flannel
+             

@@ -1,0 +1,6 @@
+terraform init 
+terraform init upgrade ---update the versions
+terraform plan ----it displsying what type of resources
+terraform apply ---it creatines resources 
+terraform destroy --removing all what it creating that resources
+terraform apply --auto approval
