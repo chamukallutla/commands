@@ -2,10 +2,25 @@ su - jenkins -s /bin/bash/
 cd /etc   
 passwd----change bash
 ## root user can asking jenkin user password
-visudo
-#change in 
+#add users to all permissions 
  cd /etc/sudoers.d/
  ll
 vi 90-cloud-init-users
 
+#add ec2-user to jenkin user 
+
 jenkins safe restart
+sudo docker ps 
+sudo docker  
+
+adduser (jenkinslave)name 
+passwd 1234566(enter any pawswd)
+
+su - jenkinslave
+pwd 
+/var/lib
+mkdir jenkins
+cd /jenkins
+pwd
+var/lib/jenkins 
+

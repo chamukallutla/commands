@@ -6,7 +6,10 @@ git push origin branchname
 git clone url
 git status 
 git diff ---it will be showing what file will be channge and what they are change 
-git add .
+git add .  --stging area 
+git rm --cached
+git log 
+git pull origion main 
 git commit -m "pass msg"
 git commit -m '
   pass commi 1st line 
