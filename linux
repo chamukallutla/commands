@@ -98,3 +98,9 @@ wich ----where commands running it will showing like
 wich ls
 wich date
 logs -f
+route-n ---check the default route and routing tables
+top ---it will be showing the system process
+lsof ---it will showin wich file open at which process 
+tail --- it dissplay in file last lines
+head ---it dissplay in fist 10 foles
+tar -xvz tar.filename

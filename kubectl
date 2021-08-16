@@ -9,3 +9,62 @@ k8s by deafault network
                     wavenet
                     flannel
              
+kubectl get nodes
+wq!
+kubectl get po -n namespacename 
+kubectl get po -n namespacename -o wide ---wich takes which nodes
+kubectl get
+# this command is kubens command works directly
+wget https://raw.githubusercontent.com/ahmetb/kubectx/master/kubens 
+# its got dowload kubens 
+#change parimissions 
+chmod 755 kubens
+#check command its works
+./kubens
+mv kubens /usr/local/bin/
+#by deafault use the kubens deafault namespace 
+#change our name owne ns 
+kubens app1(own name space)
+#select running pods 
+kubectl get po | grep -i running 
+#count how many pods are running counting 
+kubectl get po | grep -i running | wc -l 
+#pod is pedenging staus check 
+kubectl describe po  (pendding podid )
+kubectl describe service 
+kubectl describe ingress 
+#reduce the replica sets
+kubectl scale deployement nginx-deploement --replica=2
+# this is ingress injinx yaml file
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-0.32.0/deploy/static/provider/aws/deploy.yaml
+kubectl get po -n ingress-nginx 
+#pod gose which node 
+kubectl get po -o wide
+#login to the pod 
+kubectl exec -it podID bash   
+hostename 
+pwd
+grep -i namespace nginx-config 
+kubectl get ing -n app1 
+kubectl get deployment -n ingress-nginx  --- it will display the what dose deploement file
+kubectl get rs -n ingress-nginx ----replica set (rs) displaythe what dose it 
+kubectl get po -n ingress-nginx --it shows which pod have rules runnig job can have rules
+
+kubectl get svc -n ingress-nginx ---it will disply the which type of LB created
+kubectl get apply -f yaml.filename
+# NLB forword the trafficto the POD(ingress-nginx)
+# we will have rules in POD(ingress-nginx)
+1 why we use kubernetes ?
+ kubernaetes management technology and allso its container technology
+ kubernaetes runs at a time more containers 
+ its needs docker engen 
+ with out docker engen its not running
+2 what is sidecar ?
+  one pod runs two containers one for application and  
+  one more supporting purpose like(log agent,monitiring tool) 
+3 what is service ?
+  service entry point to  the pod   
+  it collect group of pods
+  expose the pod out side
+# kubernaetes use calico network
+#ingress can have rules

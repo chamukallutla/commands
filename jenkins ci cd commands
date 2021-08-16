@@ -1,0 +1,4 @@
+#this is jenkins to bastion copy the id_rsa_pub file through the ci cd flow 
+#check in gogle how to apend the public key
+echo $pubkey >temp_file
+cat ~/.ssh/id_rsa.pub | (ssh user@host "cat >> ~/.ssh/authorized_keys")
