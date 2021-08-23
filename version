@@ -8,3 +8,4 @@ docker 20.10
 docker descktop 3.4
 openjdk 11
 k8s 1.20
+git 2.0

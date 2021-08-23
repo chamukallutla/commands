@@ -1,0 +1,33 @@
+aws ec2 describe-instances | grep -i PublicIpAddress | grep -v "\[" | sort | tail
+
+
+aws ec2 describe-instance | grep -i privateipaddress | grep -r "\[" |tail | awk '{print $2}' | $, ||g| s/'"//g >inventory
+
+aws ec2 describe-instances | grep -i PublicIpAddress | grep -v "\[" | sort | tail
+  
+
+aws configure --profile name
+diff aws a/c use profile
+
+
+---onlu private ip adress nu--
+aws ec2 describe-instances --instance-id i-0329b8ad --query 'Reservations[].Instances[].PrivateIpAddress' | grep -vE '\[|\]' | awk -F'"' '{ print $2 }'
+aws ec2 describe-instances | grep -i PublicIpAddress | grep -v "\[" | sort | tail
+
+
+aws ec2 describe-instance | grep -i privateipaddress | grep -r "\[" |tail | awk '{print $2}' | $, ||g| s/'"//g >inventory
+
+aws ec2 describe-instances | grep -i PublicIpAddress | grep -v "\[" | sort | tail
+  
+
+aws configure --profile name
+diff aws a/c use profile
+
+
+---onlu private ip adress nu--
+aws ec2 describe-instances --instance-id i-0329b8ad --query 'Reservations[].Instances[].PrivateIpAddress' | grep -vE '\[|\]' | awk -F'"' '{ print $2 }'
+
+aws configure 
+aws configures -profile 
+
+

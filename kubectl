@@ -25,6 +25,8 @@ mv kubens /usr/local/bin/
 #by deafault use the kubens deafault namespace 
 #change our name owne ns 
 kubens app1(own name space)
+#find how many clusters 
+kubectl get
 #select running pods 
 kubectl get po | grep -i running 
 #count how many pods are running counting 
@@ -52,6 +54,9 @@ kubectl get po -n ingress-nginx --it shows which pod have rules runnig job can h
 
 kubectl get svc -n ingress-nginx ---it will disply the which type of LB created
 kubectl get apply -f yaml.filename
+kubectl config set-contexts 
+#take the backup config file 
+cp config config_backup
 # NLB forword the trafficto the POD(ingress-nginx)
 # we will have rules in POD(ingress-nginx)
 1 why we use kubernetes ?
