@@ -1,0 +1,78 @@
+#Lanunch red Hat instance one master 
+It means ansible server
+Lanunch 2 nodes amazon linux os
+# Inatlastin process 
+
+ssh -i chamu.pem ec2-user@pubip
+yum update -y
+# We need sunscription manager install 
+ELP
+# 1st we have install EPL package and then we have to install anisible
+#https://docs.fedoraproject.org/en-US/epel/
+# follow above url ansible installing docs.ansible website
+# Install ELP 
+#Rehel/centOS:
+yum install https://dl.fedoraproject.org/pub/epel/epel-release-latest-8.noarch.rpm
+yum install ansible 
+
+# Ansible version 2.9.25
+
+# Red Hat version 
+# Python3 version 3.6.8
+# check what is redhat release
+cat /etc/redhat-release
+# ansible creats by defalt ansible confic 
+# config file = /etc/ansible/ansible.cfg
+ echo "master" >/etc/hostname
+ hostname -F /etc/hostname
+# In master node we have to create one user instated of root user 
+adduser ansibleuser
+passwd ansibleuser 
+# passwd-- chamu1-----ansibleuser
+# Entar password two tmes hear
+# And give sudo access for that ansibleuser
+visudo
+ec2-user        ALL=(ALL)       NOPASSWD: ALL
+ansibleuser        ALL=(ALL)       NOPASSWD: ALL
+# Login to the ansibleuser
+su - ansibleuser 
+# Do ssh setup for master to node
+# DO this all servers
+vi /etc/ssh/sshd_confi
+passwd yes
+and #passwd no
+# Restaer the all servers sshd
+systemctl restart sshd
+# Genarate keys Copy keys directly from master node to clent nodes  
+# copy from the ansibleuser to node1 and node2
+ssh-Copy-id pubip
+# try to login  ansibleuser master to node1 and node2 ansibleuser
+ssh pubip or privateip
+# asibleuser master confih=ger the all npdes ip
+# Inventary(hosts)
+sudo vi hosts
+# Check the all conection use command
+ansible all -m ping
+# check all 
+tree ansible/
+sudo yum install tree
+# our host servers on etc/ansible
+# we can change this in 
+cd /etc/ansible/hosts
+inventary = /home/ansible/inventary
+# Like same change in 
+cd /etc/ansible/ansible_config
+inventary = /home/ansible/inventary
+# Inventary in side pass ip's for all client nodes
+
+# in controll nodes on top of linux install python 3.5
+# In controll nodes on top of windows os install .NET or POWER SHELL v.o
+ansible --list-hosts file name 
+ansible --list-hosta all
+vi inventary
+# It shows bydeafault inventary file
+ansible-inventary --grab
+# It will display owne creating inventary
+ansible-inventary --grabph -i inventary
+
+
