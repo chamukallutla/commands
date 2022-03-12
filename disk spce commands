@@ -1,0 +1,20 @@
+sudo xfs_growfs /dev/nvme0n1p2
+1003 xfs_growfs /dev/nvme0n1p2
+1004 df -h
+1005 resize2fs /dev/nvme0n1p2
+1006 xfs_growfs /dev/nvme0n1p2
+1007 df -h
+1008 lsblk
+1009 locate rescan
+1010 yum list |grep locate
+1011 yum install mlocate
+1012 updatedb
+1013 locate rescan
+1014 lsblk
+1015 df -h
+1016 growpart /dev/nvme0n1p 2
+1017 growpart /dev/nvme0n1 2
+1018 df -hT
+1019 xfs.growfs /dev/nvme0n1p2
+1020 xfs_growfs /dev/nvme0n1p2
+1021 df -h
