@@ -1,0 +1,56 @@
+lsblk
+df -h
+df -hT
+fsck.xfs /dev/nvme3n1
+xfs_repair /dev/nvme3n1
+ lsblk
+history
+ lsblk
+ df -h
+ ll
+ cd /
+ ll
+ lsblk
+ df -h
+cat etc/fstab/
+cat etc/fstab
+lsblk
+ vi etc/fstab
+ mount -a
+ cat /etc/fstab
+ df -h
+ xfs_repair -L /dev/nvme3n1
+ mount -a
+ pwd
+ cd /etc/fstab
+ cd /etc
+ ll
+ ll | grep fstab
+ cat fstab
+ mount -a
+ history
+ cat etc/fstab
+ vi etc/fstab
+ cat /etc/fstab
+pwd
+ xfs_repair /dev/nvme3n1
+ df -h
+ cat /etc/fstab
+ df -h
+ lsblk
+ df -h
+ df -Th
+ df -Th /dev/nvme3n1
+ mount /dev/nvme3n1 /mnt
+ df -Th /mnt
+ ls /mnt
+ vi /etc/fstab
+ lsblk
+ umount /mnt
+ ll /
+ ls /cbdata
+ mount -a
+ lsblk
+ ls /cbdata
+ exit
+ history
